@@ -5,9 +5,9 @@ if [ ! -d "venv" ]; then
 fi
 source venv/bin/activate
 echo "Instalando dependencias"
-pip install --upgrade pip
-pip install pytest pytest-html
+pip install --upgrade pip --break-system-packages
+pip install pytest pytest-html --break-system-packages
 echo "Ejecutando pruebas"
-pytest test/ --junitxml=reports/test-result.xml --html=reports/test-result.html --self-contained-html
+venv/bin/python -m pytest test/ --junitxml=reports/test-result.xml --html=reports/test-result.html --self-contained-html
 echo "Pruebas ejecutadas"
 
