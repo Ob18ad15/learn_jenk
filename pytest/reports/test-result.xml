@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.037" timestamp="2026-01-25T18:42:31.138653-05:00" hostname="retaque"><testcase classname="test.test_sumar" name="test_sumar_positivos" time="0.000" /><testcase classname="test.test_sumar" name="test_sumar_negativos" time="0.001" /><testcase classname="test.test_sumar" name="test_sumar_mixtos" time="0.000" /><testcase classname="test.test_sumar" name="test_sumar_ceros" time="0.000" /><testcase classname="test.test_sumar" name="test_sumar_fail" time="0.000"><failure message="assert 12 == 10&#10; +  where 12 = sumar(10, 2)">def test_sumar_fail():
+&gt;       assert sumar(10, 2) == 10
+E       assert 12 == 10
+E        +  where 12 = sumar(10, 2)
+
+test/test_sumar.py:28: AssertionError</failure></testcase></testsuite></testsuites>
